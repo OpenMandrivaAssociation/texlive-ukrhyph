@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-ukrhyph
 Version:	20070119
-Release:	5
+Release:	6
 Summary:	Hyphenation Patterns for Ukrainian
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyphenation/ukrhyph
