@@ -1,18 +1,12 @@
-# revision 21081
-# category Package
-# catalog-ctan /language/hyphenation/ukrhyph
-# catalog-date 2007-01-19 00:08:42 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-ukrhyph
-Version:	20190228
+Version:	21081
 Release:	1
 Summary:	Hyphenation Patterns for Ukrainian
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyphenation/ukrhyph
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ukrhyph.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ukrhyph.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ukrhyph.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ukrhyph.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ font (including the standard T2A, so one can use the patterns
 with free fonts).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -61,23 +55,10 @@ with free fonts).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070119-2
-+ Revision: 757246
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070119-1
-+ Revision: 719836
-- texlive-ukrhyph
-- texlive-ukrhyph
-- texlive-ukrhyph
-
