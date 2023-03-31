@@ -1,6 +1,6 @@
 Name:		texlive-ukrhyph
 Version:	21081
-Release:	1
+Release:	2
 Summary:	Hyphenation Patterns for Ukrainian
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/hyphenation/ukrhyph
