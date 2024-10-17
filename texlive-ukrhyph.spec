@@ -3,7 +3,7 @@ Version:	21081
 Release:	2
 Summary:	Hyphenation Patterns for Ukrainian
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/language/hyphenation/ukrhyph
+URL:		https://www.ctan.org/tex-archive/language/hyphenation/ukrhyph
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ukrhyph.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ukrhyph.doc.r%{version}.tar.xz
